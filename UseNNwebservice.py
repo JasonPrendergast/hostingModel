@@ -99,5 +99,4 @@ if __name__ == '__main__':
 
 #use_neural_network("He's an idiot and a jerk.")
 #use_neural_network("This was the best store i've ever seen.")
-#use_neural_network("fuck off")
 #use_neural_network("I really hate that boy he totally suck")
