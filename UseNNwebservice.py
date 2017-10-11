@@ -46,9 +46,7 @@ def neural_network_model(data):
     output = tf.matmul(l2,output_layer['weight']) + output_layer['bias']
 
     return output
-#tf.reset_default_graph()
-#saver = tf.train.Saver()
-#tf.reset_default_graph()
+
 saver = tf.train.import_meta_graph('./model.ckpt.meta')
 def use_neural_network(input_data):
     prediction = neural_network_model(x)
