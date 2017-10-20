@@ -36,7 +36,7 @@ output_layer = {'f_fum':None,
                 'weight':tf.Variable(tf.random_normal([n_nodes_hl2, n_classes])),
                 'bias':tf.Variable(tf.random_normal([n_classes])),}
 
-
+#Define the network shape
 def neural_network_model(data):
 
     l1 = tf.add(tf.matmul(data,hidden_1_layer['weight']), hidden_1_layer['bias'])
