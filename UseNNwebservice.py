@@ -5,6 +5,8 @@ import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.stem import WordNetLemmatizer
 from bottle import route, run, request
+
+#Creating Globals 
 lemmatizer = WordNetLemmatizer()
 
 n_nodes_hl1 = 500
