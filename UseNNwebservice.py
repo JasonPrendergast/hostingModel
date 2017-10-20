@@ -84,7 +84,7 @@ def use_neural_network(input_data):
             print('Negative:',input_data)
             return 'Negative:',input_data
             
-
+#use the network for predictions/classification
 #http://127.0.0.1:12345/posneg?blog=I%20hate%20fish&key=test1
 @route('/posneg')
 def index():
@@ -94,8 +94,9 @@ def index():
 		#str(int(request.GET.get('number1')) + int(request.GET.get('number2')))
     else:
         return 'Unsupported operation'
-
+#start the server hosting the network
 if __name__ == '__main__':
+	#run
     run(host='127.0.0.1', port=12345)
 
 #use_neural_network("He's an idiot and a jerk.")
