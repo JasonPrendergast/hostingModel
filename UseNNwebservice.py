@@ -48,8 +48,9 @@ def neural_network_model(data):
     output = tf.matmul(l2,output_layer['weight']) + output_layer['bias']
 
     return output
-
+#create the saver
 saver = tf.train.import_meta_graph('./model.ckpt.meta')
+#Use the network for training
 def use_neural_network(input_data):
     prediction = neural_network_model(x)
     with open('lexicon-2500-2638.pickle','rb') as f:
